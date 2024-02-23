@@ -8,7 +8,7 @@ const props = defineProps({
   <div class="card">
     <img :src="product.image_url" alt="" />
     <div class="container-text">
-      <h1 class="title">{{ product.name }}</h1>
+      <h1 class="title">:{{ product.name }}:</h1>
       <h3 class="description">{{ product.description }}</h3>
       <h4 class="price">{{ product.price }}</h4>
     </div>
