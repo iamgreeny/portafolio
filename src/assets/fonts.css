@@ -1,0 +1,30 @@
+/* fonts */
+@font-face {
+  font-family: adventuro_font;
+  src: url("/fonts/ADVENTURO.TTF");
+}
+
+@font-face {
+  font-family: blankit_font;
+  src: url("./../../public/fonts/BLANKIT-8MW2B.TTF");
+}
+
+@font-face {
+  font-family: gilroy_regular;
+  src: url("./../../public/fonts/GILROY-REGULAR.TTF");
+}
+
+@font-face {
+  font-family: gilroy_thin_italic;
+  src: url("./../../public/fonts/GILROY-THINITALIC.TTF");
+}
+
+@font-face {
+  font-family: kaoly_font;
+  src: url("./../../public/fonts/KAOLYDEMO-6Y9K1.TTF");
+}
+
+@font-face {
+  font-family: sarina_fort;
+  src: url("./../../public/fonts/SARINA-REGULAR.TTF");
+}
