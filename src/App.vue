@@ -5,11 +5,9 @@ import TheFooter from "@/components/layouts/TheFooter.vue";
 </script>
 
 <template>
-  <div>
-    <TheHeader />
-    <RouterView />
-    <TheFooter />
-  </div>
+  <TheHeader />
+  <RouterView />
+  <TheFooter />
 </template>
 
 <style scoped>
