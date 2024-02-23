@@ -3,7 +3,7 @@
 <template>
   <header>
     <div class="titulo">
-      <h1>METEORA</h1>
+      <h1>meteora</h1>
     </div>
     <div class="links">
       <p>WORK</p>
@@ -22,9 +22,17 @@ header {
   align-items: center;
 }
 
+.titulo {
+  h1 {
+    text-transform: capitalize;
+    font-family: kaoly_font;
+  }
+}
+
 .links {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  font-family: gilroy_regular;
 }
 </style>

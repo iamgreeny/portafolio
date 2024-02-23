@@ -15,9 +15,9 @@ const props = defineProps({
 </script>
 <template>
   <div class="card">
-    <h2>{{ title }}</h2>
-    <h3>{{ subtitle }}</h3>
-    <img :src="imageUrl" alt="Project Image" />
+    <h2>Titulo del Proyecto</h2>
+    <h3>Subtitulo del Proyecto</h3>
+    <img src="" alt="Project Image" />
   </div>
 </template>
 
