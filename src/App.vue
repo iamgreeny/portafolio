@@ -1,18 +1,19 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-
+import { RouterLink, RouterView } from "vue-router";
+import TheHeader from "@/components/layouts/TheHeader.vue";
+import TheFooter from "@/components/layouts/TheFooter.vue";
 </script>
 
 <template>
-  <header class="prueba">
-    
-  </header>
-
-  <RouterView />
+  <div>
+    <TheHeader />
+    <RouterView />
+    <TheFooter />
+  </div>
 </template>
 
 <style scoped>
-.prueba{
+.prueba {
   background-color: brown;
   height: 20px;
 }

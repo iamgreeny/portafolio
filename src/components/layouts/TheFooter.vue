@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section>about</section>
+  <div>Footer</div>
 </template>
 
 <style lang="scss" scoped></style>
