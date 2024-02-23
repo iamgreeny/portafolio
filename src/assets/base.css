@@ -37,6 +37,7 @@
 *::after {
   margin: 0;
   font-weight: normal;
+  position: relative;
 }
 
 body {
