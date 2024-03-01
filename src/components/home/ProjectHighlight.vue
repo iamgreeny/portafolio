@@ -10,4 +10,11 @@ import SingleProject from "./SingleProject.vue";
   </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+</style>

@@ -1,7 +1,14 @@
 <script setup></script>
 
 <template>
-  <section></section>
+  <section>
+    <p>Inspirate</p>
+    <h1>Portafolio de Colecciones</h1>
+  </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+section {
+  text-align: center;
+}
+</style>
