@@ -28,3 +28,8 @@
   font-family: sarina_font;
   src: url("/fonts/SARINA-REGULAR.TTF");
 }
+
+@font-face {
+  font-family: morvem_font;
+  src: url("/fonts/morvem/Morvem-Thin.ttf");
+}

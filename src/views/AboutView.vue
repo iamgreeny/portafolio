@@ -62,8 +62,13 @@ section > * {
   left: 50%;
   transform: translateX(-50%);
 
+  h1 {
+    font-size: 5rem;
+    font-family: morvem_font;
+  }
+
   p {
-    font-family: adventuro_font;
+    font-family: gilroy_regular;
   }
 }
 
