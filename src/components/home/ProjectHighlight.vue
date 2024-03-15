@@ -64,7 +64,7 @@ import SingleProject from "./SingleProject.vue";
   z-index: -1;
 }
 
-@media screen and (width < 1200px) {
+@media screen and (width > 1200px) {
   .ph_container {
     padding-top: 15rem;
   }
@@ -81,6 +81,12 @@ import SingleProject from "./SingleProject.vue";
 
   .dream {
     width: 180%;
+  }
+}
+
+@media screen and (width < 600px) {
+  .ph_container {
+    padding-top: 8rem;
   }
 }
 </style>
