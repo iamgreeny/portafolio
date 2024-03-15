@@ -1,6 +1,7 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --color-white: #ffffff;
+  --color-primary: #29235c;
 }
 
 /* semantic color variables for this project */

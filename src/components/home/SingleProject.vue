@@ -17,9 +17,8 @@ const props = defineProps({
   <div class="card">
     <div class="card-text">
       <h2>Titulo del Proyecto</h2>
-      <h3>Subtitulo del Proyecto</h3>
     </div>
-    <img src="/images/Modeling.jpg" alt="Project Image" />
+    <img src="/images/home/category_frame.svg" alt="Project Image" />
   </div>
 </template>
 
@@ -29,9 +28,9 @@ const props = defineProps({
 }
 .card-text {
   position: absolute;
-  width: 40%;
-  left: 42px;
-  bottom: 47px;
+  width: 50%;
+  left: 10%;
+  bottom: 10%;
   z-index: 1;
 }
 </style>

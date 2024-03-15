@@ -2,7 +2,7 @@
 
 <template>
   <section>
-    <img src="/images/hero.jpg" alt="" />
+    <img src="/images/home/banner.svg" alt="" />
     <div class="hero-text">
       <h1>Pintando mis pensamientos</h1>
       <p>
@@ -19,13 +19,13 @@
 
 <style scoped>
 section {
-  height: 500px;
 }
 
 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .hero-text {
