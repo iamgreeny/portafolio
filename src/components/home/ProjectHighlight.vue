@@ -40,6 +40,7 @@ import SingleProject from "./SingleProject.vue";
   color: var(--color-primary);
   text-transform: uppercase;
   font-weight: 900;
+  text-align: center;
 
   p {
     font-size: 1.8rem;
@@ -79,7 +80,7 @@ import SingleProject from "./SingleProject.vue";
   }
 
   .dream {
-    width: 80%;
+    width: 180%;
   }
 }
 </style>

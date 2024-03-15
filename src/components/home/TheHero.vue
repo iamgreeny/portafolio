@@ -4,15 +4,10 @@
   <section>
     <img src="/images/home/banner.svg" alt="" />
     <div class="hero-text">
-      <h1>Pintando mis pensamientos</h1>
-      <p>
-        ¡Conoce a Meteora, la hechicera de los Colores! En su camino va
-        transformando colores en historias visuales. El viaje creativo de
-        Meteora es una aventura emocionante, siempre descubriendo nuevos
-        tesoros. Ella explora el mundo de la imaginación sin miedo. Con sus
-        ideas coloridas, quiere hacer del mundo un un poco más vibrante y
-        encantador.
-      </p>
+      <h1>
+        PAINTING MY <br />
+        THOUGHTS
+      </h1>
     </div>
   </section>
 </template>
@@ -31,7 +26,31 @@ img {
 .hero-text {
   position: absolute;
   width: 40%;
-  left: 100px;
-  bottom: 100px;
+  left: 5%;
+  bottom: 17%;
+}
+
+h1 {
+  font-family: gilroy_regular;
+  color: #ffbd59;
+  font-size: 2.2rem;
+}
+
+@media screen and (width > 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (width < 600px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (width < 400px) {
+  h1 {
+    font-size: 1rem;
+  }
 }
 </style>
