@@ -51,4 +51,10 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+}
 </style>
