@@ -106,27 +106,29 @@ h1 {
   transform: translateX(-50%);
 }
 
-@media screen and (max-width: 900px) {
-  .photo {
-    top: 27%;
-    width: 31%;
-  }
+@media screen and (min-width: 1400px) {
   .text_about {
-    top: 53%;
-    width: 72%;
-
     h1 {
-      font-size: 5rem;
-      font-family: morvem_font;
+      font-size: 6rem;
     }
-
     p {
-      font-family: gilroy_regular;
+      font-size: 2rem;
     }
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1200px) {
+  .text_about {
+    h1 {
+      font-size: 6rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
   .text_section {
     background: linear-gradient(90deg, #00a19a, #2fac66);
     padding-bottom: 40px;
@@ -147,7 +149,7 @@ h1 {
     }
 
     p {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
       font-family: gilroy_regular;
     }
   }
@@ -157,6 +159,17 @@ h1 {
   }
   .show_mobile {
     display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text_about {
+    h1 {
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
   }
 }
 </style>
