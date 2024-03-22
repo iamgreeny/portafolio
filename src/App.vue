@@ -11,32 +11,44 @@ import TheFooter from "@/components/layouts/TheFooter.vue";
   </div>
   <TheFooter class="main-content" />
   <div class="intro-animation">
-    <div id="meteor"></div>
+    <img id="meteor" src="/images/cometa/meteor.svg" alt="meteor image" />
+    <div id="clouds">
+      <div class="cloud-left">
+        <img src="/images/cometa/clouds_left.svg" alt="clouds" />
+      </div>
+      <div class="cloud-mid">
+        <img src="/images/cometa/clouds_mid.svg" alt="clouds" />
+      </div>
+      <div class="cloud-right">
+        <img src="/images/cometa/clouds_right.svg" alt="clouds" />
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 #meteor {
   position: absolute;
-  top: 50%;
-  right: -100px; /* Adjust the value based on the meteor's width */
-  transform: translate(0, -50%);
-  width: 100px; /* Adjust the width of the meteor */
-  height: 100px; /* Adjust the height of the meteor */
-  background-color: yellow; /* Adjust the color of the meteor */
-  border-radius: 50%;
-  animation: meteorAnimation 2s forwards;
+  top: 40%;
+  right: -500px; /* Adjust the value based on the meteor's width */
+  transform: translate(60%, -50%);
+  width: 500px; /* Adjust the width of the meteor */
+  height: 200px; /* Adjust the height of the meteor */
+  animation: meteorAnimation 3s forwards ease-out;
 }
 
 @keyframes meteorAnimation {
   0% {
-    right: -100px; /* Adjust the initial position of the meteor */
+    right: -500px; /* Adjust the initial position of the meteor */
+    top: 40%;
   }
   50% {
     right: 50%; /* Adjust the halfway position of the meteor */
+    top: 50%;
   }
   100% {
     right: 50%; /* Adjust the final position of the meteor */
+    top: 50%;
   }
 }
 .intro-animation {
@@ -45,9 +57,30 @@ import TheFooter from "@/components/layouts/TheFooter.vue";
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(207, 207, 255);
+  background: linear-gradient(to top, #40006b, #6700ab);
   z-index: -99;
-  animation: fadeOut 1s 3s forwards;
+  animation: fadeOut 3s 3s forwards;
+}
+
+#clouds {
+  display: flex;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid red;
+}
+
+.cloud-left {
+  flex: 2;
+}
+
+.cloud-mid {
+  flex: 1;
+}
+
+.cloud-right {
+  flex: 2;
 }
 
 @keyframes fadeOut {
