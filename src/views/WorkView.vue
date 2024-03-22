@@ -12,8 +12,4 @@
   </section>
 </template>
 
-<style scoped>
-.nubemorada {
-  top: -15px;
-}
-</style>
+<style scoped></style>

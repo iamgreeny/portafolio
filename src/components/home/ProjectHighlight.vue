@@ -61,8 +61,8 @@ import SingleProject from "./SingleProject.vue";
 }
 
 .dream {
-  width: 60%;
-  top: -50px;
+  width: 90%;
+  top: -20px;
   z-index: -1;
 }
 
