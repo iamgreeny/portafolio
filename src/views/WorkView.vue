@@ -14,5 +14,6 @@
 
 <style scoped>
 .nubemorada {
+  top: -15px;
 }
 </style>

@@ -70,6 +70,11 @@ import SingleProject from "./SingleProject.vue";
   width: 80%;
 }
 
+.ondascolores {
+  position: absolute;
+  bottom: 0%;
+}
+
 @media screen and (width > 1200px) {
   .ph_container {
     padding-top: 15rem;
