@@ -32,7 +32,7 @@ import TheFooter from "@/components/layouts/TheFooter.vue";
   top: 40%;
   right: -500px; /* Adjust the value based on the meteor's width */
   transform: translate(60%, -50%);
-  width: 500px; /* Adjust the width of the meteor */
+  width: 415px; /* Adjust the width of the meteor */
   height: 200px; /* Adjust the height of the meteor */
   animation: meteorAnimation 3s forwards ease-out;
 }
@@ -59,7 +59,7 @@ import TheFooter from "@/components/layouts/TheFooter.vue";
   height: 100%;
   background: linear-gradient(to top, #40006b, #6700ab);
   z-index: -99;
-  animation: fadeOut 3s 3s forwards;
+  animation: fadeOut 1s 3s forwards;
 }
 
 #clouds {
@@ -68,7 +68,6 @@ import TheFooter from "@/components/layouts/TheFooter.vue";
   width: 100%;
   height: 100%;
   position: absolute;
-  border: 1px solid red;
 }
 
 .cloud-left {
@@ -103,6 +102,17 @@ import TheFooter from "@/components/layouts/TheFooter.vue";
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cloud-mid {
+    display: none;
+  }
+
+  #meteor {
+    width: 208px;
+    height: 100px;
   }
 }
 </style>
