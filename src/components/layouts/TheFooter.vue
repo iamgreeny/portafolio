@@ -1,7 +1,12 @@
 <script setup></script>
 
 <template>
-  <div>Footer</div>
+  <div class="footer"></div>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.footer {
+  background-color: #29235c;
+  height: 170px;
+}
+</style>

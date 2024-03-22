@@ -4,7 +4,7 @@ import SingleProject from "./SingleProject.vue";
 
 <template>
   <section>
-    <img class="below_banner" src="/images/home/below_banner.svg" alt="" />
+    <img class="below_banner" src="/images/home/below_banner3.svg" alt="" />
     <div class="ph_container">
       <div class="text_block">
         <p>Inspirate</p>
@@ -16,6 +16,8 @@ import SingleProject from "./SingleProject.vue";
         <SingleProject />
       </div>
       <div class="dream"><img src="/images/home/fantasy.svg" alt="" /></div>
+      <img class="durmiente" src="/images/home/nina_dream.svg" alt="" />
+      <img class="ondascolores" src="/images/home/ondas_bajas.svg" alt="" />
     </div>
   </section>
 </template>
@@ -62,6 +64,10 @@ import SingleProject from "./SingleProject.vue";
   width: 60%;
   top: -50px;
   z-index: -1;
+}
+
+.durmiente {
+  width: 80%;
 }
 
 @media screen and (width > 1200px) {

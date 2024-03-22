@@ -2,7 +2,7 @@
 
 <template>
   <section>
-    <img src="/images/home/banner.svg" alt="" />
+    <img src="/images/home/banner3.svg" alt="" />
     <div class="hero-text">
       <h1>
         PAINTING MY <br />

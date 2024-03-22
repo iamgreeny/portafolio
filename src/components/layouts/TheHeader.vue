@@ -27,7 +27,7 @@ header {
   justify-content: space-between;
   padding: 0px 20px;
   align-items: center;
-  border-bottom: 1px solid black;
+  background-color: #29235c;
 }
 
 .titulo {
@@ -35,6 +35,7 @@ header {
     text-transform: capitalize;
     font-family: kaoly_font;
     cursor: pointer;
+    color: #ffbd59;
   }
 }
 
@@ -43,6 +44,7 @@ header {
   flex-direction: row;
   gap: 20px;
   font-family: gilroy_regular;
+  color: #ffbd59;
   p {
     cursor: pointer;
     transition: 0.3s;
