@@ -3,8 +3,8 @@ import SingleProject from "./SingleProject.vue";
 </script>
 
 <template>
-  <section>
-    <img class="below_banner" src="/images/home/below_banner3.svg" alt="" />
+  <section class="project">
+    <img class="below_banner" src="/images/home/below_banner6.svg" alt="" />
     <div class="ph_container">
       <div class="text_block">
         <p>Inspirate</p>
@@ -32,7 +32,6 @@ import SingleProject from "./SingleProject.vue";
 .below_banner {
   position: absolute;
   width: 100%;
-  top: 0px;
 }
 .text_block {
   display: flex;
@@ -45,7 +44,7 @@ import SingleProject from "./SingleProject.vue";
   text-align: center;
 
   p {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   h1 {
@@ -53,7 +52,7 @@ import SingleProject from "./SingleProject.vue";
   }
 }
 .highlight_container {
-  width: 60%;
+  width: 78%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 2rem;
@@ -61,13 +60,13 @@ import SingleProject from "./SingleProject.vue";
 }
 
 .dream {
-  width: 90%;
-  top: -20px;
+  width: 80%;
   z-index: -1;
 }
 
 .durmiente {
   width: 80%;
+  margin-top: 1%;
 }
 
 .ondascolores {
@@ -77,7 +76,7 @@ import SingleProject from "./SingleProject.vue";
 
 @media screen and (width > 1200px) {
   .ph_container {
-    padding-top: 15rem;
+    padding-top: 45rem;
   }
 }
 
