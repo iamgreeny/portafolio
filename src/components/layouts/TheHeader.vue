@@ -17,7 +17,7 @@ function toggleMenu() {
 <template>
   <header>
     <div class="titulo">
-      <h1 @click="navigateTo('/')">meteora</h1>
+      <h1 @click="navigateTo('/')">Laura Verde</h1>
     </div>
     <div class="links">
       <p @click="navigateTo('/work')">WORK</p>

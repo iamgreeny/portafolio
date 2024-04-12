@@ -4,7 +4,7 @@ import SingleProject from "./SingleProject.vue";
 
 <template>
   <section class="project">
-    <img class="below_banner" src="/images/home/below_banner6.svg" alt="" />
+    <img class="below_banner" src="/images/home/below_banner7.svg" alt="" />
     <div class="ph_container">
       <div class="text_block">
         <p>Inspirate</p>

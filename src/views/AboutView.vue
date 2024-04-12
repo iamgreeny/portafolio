@@ -8,7 +8,7 @@
     <img class="photo" src="/images/about/p2.png" alt="" />
 
     <div class="text_about hide_mobile">
-      <h1>Hola! Soy Meteora</h1>
+      <h1>Hola! viajero</h1>
       <p>
         Me llaman la hechicera de los Colores! Soy una artista en diseño gráfico
         e ilustración con un toque mágico. Transformando colores en visuales
@@ -26,7 +26,7 @@
   </section>
   <section class="text_section show_mobile">
     <div class="text_about">
-      <h1>Hola! Soy Meteora</h1>
+      <h1>Hola! viajero</h1>
       <p>
         Me llaman la hechicera de los Colores! Soy una artista en diseño gráfico
         e ilustración con un toque mágico. Transformando colores en visuales
@@ -84,11 +84,9 @@ h1 {
 
 .text_about {
   text-align: center;
-  top: 53%;
-  width: 72%;
+  top: 55%;
   left: 50%;
   transform: translateX(-50%);
-
   h1 {
     font-size: 5rem;
     font-family: morvem_font;
@@ -100,8 +98,8 @@ h1 {
 }
 
 .avion {
-  top: 71%;
-  width: 51%;
+  top: 73%;
+  width: 48%;
   left: 51%;
   transform: translateX(-50%);
 }
@@ -123,8 +121,21 @@ h1 {
       font-size: 6rem;
     }
     p {
-      font-size: 1.5rem;
     }
+  }
+  .avion {
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .text_about {
+    h1 {
+      font-size: 6rem;
+    }
+    p {
+    }
+  }
+  .avion {
   }
 }
 
