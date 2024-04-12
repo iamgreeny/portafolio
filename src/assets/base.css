@@ -56,3 +56,11 @@ body {
 img {
   display: block;
 }
+
+.span3 {
+  grid-column: span 3;
+}
+
+.span2 {
+  grid-column: span 2;
+}

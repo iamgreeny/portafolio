@@ -25,10 +25,21 @@ section {
   flex-direction: column;
   align-items: center;
 }
+
+.nubecolor {
+  position: absolute;
+}
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 80%;
   gap: 1rem;
+  margin-top: 35%;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 </style>
