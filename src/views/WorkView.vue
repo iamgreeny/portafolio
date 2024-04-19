@@ -6,7 +6,7 @@ import WorkProject from "@/components/work/WorkProject.vue";
 <template>
   <section>
     <img class="nubecolor" src="/images/work/nubes_arriba.svg" alt="" />
-
+    <h1 class="centered">Colección de arte</h1>
     <div class="container">
       <WorkProject
         v-for="project in proyectos"
@@ -24,6 +24,17 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+h1 {
+  font-size: 7rem;
+  color: #29235c;
+  font-family: gilroy_regular;
+  font-weight: 100;
+  text-align: center;
+}
+
+.centered {
+  margin: auto;
 }
 
 .nubecolor {

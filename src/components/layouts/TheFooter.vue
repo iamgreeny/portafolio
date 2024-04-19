@@ -1,23 +1,23 @@
-<script setup></script>
+<script setup>
+import SocialLinks from "@/components/layouts/SocialLinks.vue";
+</script>
 
 <template>
   <div class="footer">
     <h1>All content copyright Laura Verde 2024 ©</h1>
-    <div class="redes">
-      <img src="/images/contact/social1.svg" alt="" />
-      <img src="/images/contact/social2.svg" alt="" />
-      <img src="/images/contact/social3.svg" alt="" />
-    </div>
+    <SocialLinks />
   </div>
 </template>
 
 <style scoped>
 .footer {
   background-color: #29235c;
-  height: 100px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column-reverse;
+  gap: 1rem;
 }
 
 .footer > h1 {
@@ -25,7 +25,8 @@
   text-transform: capitalize;
   font-weight: 100;
   text-align: center;
-  color: white;
+  color: #ffbd59;
+  font-size: 1.2rem !important;
 }
 
 @media (max-width: 600px) {

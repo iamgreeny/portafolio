@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import SocialLinks from "@/components/layouts/SocialLinks.vue";
+</script>
 
 <template>
   <section class="cont_papa">
@@ -7,12 +9,8 @@
       <div class="outer"><div class="inner"></div></div>
       <div class="outer"><div class="inner"></div></div>
       <div class="outer"><div class="inner"></div></div>
-      <div class="iconos_redes">
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-      </div>
     </div>
+    <SocialLinks />
     <img src="/images/contact/tortuga.svg" alt="" />
     <!-- aqui va la imagen nubestortuga-->
   </section>
@@ -59,10 +57,5 @@ h1 {
   height: 80px;
   width: 95%;
   border-radius: 15px;
-}
-
-.iconos_redes {
-  height: 100px;
-  background-color: #efefef;
 }
 </style>
