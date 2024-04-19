@@ -7,8 +7,8 @@ import SingleProject from "./SingleProject.vue";
     <img class="below_banner" src="/images/home/below_banner7.svg" alt="" />
     <div class="ph_container">
       <div class="text_block">
-        <p>Inspirate</p>
-        <h1>Portafolio de Colecciones</h1>
+        <p>Inspired</p>
+        <h1>Collection Portfolio</h1>
       </div>
       <div class="highlight_container">
         <SingleProject :projectIndex="0" />
@@ -28,6 +28,7 @@ import SingleProject from "./SingleProject.vue";
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .below_banner {
   position: absolute;
@@ -40,7 +41,6 @@ import SingleProject from "./SingleProject.vue";
   font-family: gilroy_regular;
   color: var(--color-primary);
   text-transform: uppercase;
-  font-weight: 900;
   text-align: center;
 
   p {
@@ -74,13 +74,13 @@ import SingleProject from "./SingleProject.vue";
   bottom: 0%;
 }
 
-@media screen and (width > 1200px) {
+@media screen and (min-width: 1200px) {
   .ph_container {
-    padding-top: 45rem;
+    padding-top: 28rem;
   }
 }
 
-@media screen and (width < 1000px) {
+@media screen and (max-width: 1000px) {
   .ph_container {
     padding-top: 15rem;
   }
@@ -94,9 +94,15 @@ import SingleProject from "./SingleProject.vue";
   }
 }
 
-@media screen and (width < 600px) {
+@media screen and (max-width: 600px) {
   .ph_container {
-    padding-top: 8rem;
+    padding-top: 15rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ph_container {
+    padding-top: 10rem;
   }
 }
 </style>
