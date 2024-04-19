@@ -6,8 +6,8 @@ import WorkProject from "@/components/work/WorkProject.vue";
 <template>
   <section>
     <img class="nubecolor" src="/images/work/nubes_arriba.svg" alt="" />
-    <h1 class="centered">Colección de arte</h1>
     <div class="container">
+      <h1 class="centered">Art Collection</h1>
       <WorkProject
         v-for="project in proyectos"
         :key="project.id"
@@ -34,7 +34,8 @@ h1 {
 }
 
 .centered {
-  margin: auto;
+  grid-column: 1/-1;
+  font-family: kaoly_font;
 }
 
 .nubecolor {
