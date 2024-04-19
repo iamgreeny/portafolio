@@ -1,6 +1,7 @@
 <script setup>
 import SocialLinks from "@/components/layouts/SocialLinks.vue";
 import { ref } from "vue";
+import emailjs from "@emailjs/browser";
 
 const form = ref({
   name: "",
@@ -10,6 +11,25 @@ const form = ref({
 
 const handleSubmit = () => {
   console.log("Form:", form.value);
+  console.log(emailjs);
+  let serviceID = "service_4xhmpxm";
+  let templateID = "template_ht27ilh";
+  let publicKey = "P-zDHtrbad0HQ9_5w";
+  let templateParams = {
+    to_name: form.value.name,
+    from_name: form.value.email,
+    message: form.value.message,
+  };
+
+  emailjs.send(serviceID, templateID, templateParams, publicKey).then(
+    (response) => {
+      console.log("SUCCESS!", response.status, response.text);
+      alert("Message Sent!");
+    },
+    (err) => {
+      console.log("FAILED...", err);
+    }
+  );
 };
 </script>
 
