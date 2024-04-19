@@ -63,6 +63,15 @@ header {
   gap: 20px;
   font-family: gilroy_regular;
   color: #ffbd59;
+
+  p {
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 9 !important;
+    &:hover {
+      text-shadow: 0px 0px 1px black;
+    }
+  }
 }
 
 .dropDown {

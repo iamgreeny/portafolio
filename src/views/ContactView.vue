@@ -1,16 +1,47 @@
 <script setup>
 import SocialLinks from "@/components/layouts/SocialLinks.vue";
+import { ref } from "vue";
+
+const form = ref({
+  name: "",
+  email: "",
+  message: "",
+});
+
+const handleSubmit = () => {
+  console.log("Form:", form.value);
+};
 </script>
 
 <template>
   <section class="cont_papa">
     <h1>¡BIENVENIDO A MI MUNDO DE COLORES!</h1>
-    <div class="form_cont">
-      <div class="outer"><div class="inner"></div></div>
-      <div class="outer"><div class="inner"></div></div>
-      <div class="outer"><div class="inner"></div></div>
-    </div>
-    <SocialLinks />
+    <form class="form_cont" @submit.prevent="handleSubmit">
+      <div class="outer">
+        <div class="inner">
+          <input type="text" placeholder="Name" v-model="form.name" />
+        </div>
+      </div>
+      <div class="outer">
+        <div class="inner">
+          <input type="email" placeholder="Email" v-model="form.email" />
+        </div>
+      </div>
+      <div class="outer textarea_outer">
+        <div class="inner textarea_inner">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="8"
+            placeholder="Message"
+            v-model="form.message"
+          ></textarea>
+        </div>
+      </div>
+      <button type="submit" class="outer">Send</button>
+    </form>
+    <SocialLinks style="display: none" />
     <img src="/images/contact/tortuga.svg" alt="" />
     <!-- aqui va la imagen nubestortuga-->
   </section>
@@ -21,7 +52,15 @@ import SocialLinks from "@/components/layouts/SocialLinks.vue";
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 50rem;
 }
+
+img {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -33,11 +72,11 @@ h1 {
   text-align: center;
   font-size: 6rem;
 }
+
 .form_cont {
   display: flex;
   flex-direction: column;
   width: 50%;
-  border: 1px solid red;
   gap: 20px;
   margin-top: 4%;
 }
@@ -57,5 +96,42 @@ h1 {
   height: 80px;
   width: 95%;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-size: 2rem;
+  font-family: gilroy_regular;
+  cursor: pointer;
+}
+
+.textarea_inner,
+.textarea_outer {
+  height: max-content;
+  padding: 1rem 0rem;
+}
+
+input,
+textarea {
+  border: none;
+  background-color: transparent;
+  width: 90%;
+  height: 90%;
+  font-size: 2rem;
+  font-family: gilroy_regular;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+::placeholder {
+  color: rgb(225, 218, 221);
+  opacity: 1; /* Firefox */
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
 }
 </style>
