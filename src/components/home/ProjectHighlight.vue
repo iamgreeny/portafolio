@@ -11,9 +11,9 @@ import SingleProject from "./SingleProject.vue";
         <h1>Portafolio de Colecciones</h1>
       </div>
       <div class="highlight_container">
-        <SingleProject />
-        <SingleProject />
-        <SingleProject />
+        <SingleProject :projectIndex="0" />
+        <SingleProject :projectIndex="5" />
+        <SingleProject :projectIndex="7" />
       </div>
       <div class="dream"><img src="/images/home/fantasy.svg" alt="" /></div>
       <img class="durmiente" src="/images/home/nina_dream.svg" alt="" />
