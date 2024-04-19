@@ -10,7 +10,7 @@ function toggleMenu() {
   const hamburger = document.querySelector(".hamburger");
   const dropDown = document.querySelector(".dropDown");
   hamburger.classList.toggle("open");
-  dropDown.classList.toggle("open");
+  dropDown.classList.toggle("show");
 }
 </script>
 
@@ -29,7 +29,7 @@ function toggleMenu() {
       <span></span>
       <span></span>
     </div>
-    <div class="dropDown" style="display: none">
+    <div class="dropDown" @click="toggleMenu">
       <p @click="navigateTo('/work')">WORK</p>
       <p @click="navigateTo('/about')">ABOUT</p>
       <p @click="navigateTo('/contact')">CONTACT</p>
@@ -45,6 +45,7 @@ header {
   padding: 0px 20px;
   align-items: center;
   background-color: #29235c;
+  z-index: 9 !important;
 }
 
 .titulo {
@@ -62,13 +63,36 @@ header {
   gap: 20px;
   font-family: gilroy_regular;
   color: #ffbd59;
+}
+
+.dropDown {
+  font-family: gilroy_regular;
+  color: #ffbd59;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--color-primary);
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  z-index: 9 !important;
+
   p {
     cursor: pointer;
     transition: 0.3s;
+    z-index: 9 !important;
     &:hover {
       text-shadow: 0px 0px 1px black;
     }
   }
+}
+
+.show {
+  display: flex;
 }
 
 .hamburger {
