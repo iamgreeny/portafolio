@@ -30,10 +30,10 @@ import TheFooter from "@/components/layouts/TheFooter.vue";
 #meteor {
   position: absolute;
   top: 40%;
-  right: -500px; /* Adjust the value based on the meteor's width */
+  right: -500px; /* Adjusta el valor basado en el ancho del meteorito */
   transform: translate(60%, -50%);
-  width: 415px; /* Adjust the width of the meteor */
-  height: 200px; /* Adjust the height of the meteor */
+  width: 500px; /* Ajusta el ancho del meteorito según lo necesites */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
   animation: meteorAnimation 3s forwards ease-out;
 }
 
@@ -113,6 +113,30 @@ import TheFooter from "@/components/layouts/TheFooter.vue";
   #meteor {
     width: 208px;
     height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Ajustes para pantallas de tamaño medio (tabletas, por ejemplo) */
+  #meteor {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Ajustes para pantallas más grandes, como laptops */
+  #meteor {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* Ajustes para pantallas aún más grandes, como escritorios */
+  #meteor {
+    width: 600px;
+    height: auto;
   }
 }
 </style>

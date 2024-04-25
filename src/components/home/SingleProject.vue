@@ -57,4 +57,28 @@ const props = defineProps({
     object-fit: cover;
   }
 }
+
+@media screen and (max-width: 1240px) {
+  .card-text {
+    position: absolute;
+    width: 70%;
+    left: 10%;
+  }
+  h2 {
+    font-size: 1.3rem;
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 </style>

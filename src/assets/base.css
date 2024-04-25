@@ -64,3 +64,8 @@ img {
 .span2 {
   grid-column: span 2;
 }
+
+h2,
+h3 {
+  font-family: gilroy_regular;
+}

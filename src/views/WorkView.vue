@@ -14,7 +14,6 @@ import WorkProject from "@/components/work/WorkProject.vue";
         :project="project"
       />
     </div>
-
     <img class="nubemorada" src="/images/work/nubes_abajo.svg" alt="" />
   </section>
 </template>
@@ -26,7 +25,7 @@ section {
   align-items: center;
 }
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   color: #29235c;
   font-family: gilroy_regular;
   font-weight: 100;
@@ -49,9 +48,36 @@ h1 {
   margin-top: 35%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
   .container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    width: 90%;
+    margin-top: 25%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 1.5rem;
   }
 }
 </style>

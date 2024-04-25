@@ -11,8 +11,8 @@ const props = defineProps({
       <img v-for="img in project.img" v-if="project.img" :src="img" alt="" />
     </div>
     <div class="card-text">
-      <h1>{{ project.nombre }}</h1>
-      <h2>{{ `${project.categoria} ${project.tecnica}` }}</h2>
+      <h2>{{ project.nombre }}</h2>
+      <h3>{{ `${project.categoria} ${project.tecnica}` }}</h3>
     </div>
   </div>
 </template>

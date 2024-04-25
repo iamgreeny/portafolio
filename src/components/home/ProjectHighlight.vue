@@ -12,8 +12,8 @@ import SingleProject from "./SingleProject.vue";
       </div>
       <div class="highlight_container">
         <SingleProject :projectIndex="0" />
-        <SingleProject :projectIndex="5" />
         <SingleProject :projectIndex="7" />
+        <SingleProject :projectIndex="3" />
       </div>
       <div class="dream"><img src="/images/home/fantasy.svg" alt="" /></div>
       <img class="durmiente" src="/images/home/nina_dream.svg" alt="" />

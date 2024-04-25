@@ -21,7 +21,6 @@
       </p>
     </div>
 
-    <img class="avion" src="/images/about/avion.svg" alt="" />
     <img id="plantas" src="/images/about/plantas_bajas.svg" alt="" />
   </section>
   <section class="text_section show_mobile">
@@ -87,8 +86,9 @@ h1 {
   top: 55%;
   left: 50%;
   transform: translateX(-50%);
+
   h1 {
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: morvem_font;
   }
 
@@ -97,20 +97,13 @@ h1 {
   }
 }
 
-.avion {
-  top: 73%;
-  width: 48%;
-  left: 51%;
-  transform: translateX(-50%);
-}
-
 @media screen and (min-width: 1400px) {
   .text_about {
     h1 {
       font-size: 6rem;
     }
     p {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
 }
@@ -121,21 +114,17 @@ h1 {
       font-size: 6rem;
     }
     p {
+      font-size: 1rem;
     }
-  }
-  .avion {
   }
 }
 
 @media screen and (min-width: 900px) {
   .text_about {
     h1 {
-      font-size: 6rem;
     }
     p {
     }
-  }
-  .avion {
   }
 }
 
