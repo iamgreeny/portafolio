@@ -88,7 +88,7 @@ h1 {
   transform: translateX(-50%);
 
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     font-family: morvem_font;
   }
 
@@ -100,7 +100,7 @@ h1 {
 @media screen and (min-width: 1400px) {
   .text_about {
     h1 {
-      font-size: 6rem;
+      font-size: 8rem;
     }
     p {
       font-size: 1.6rem;
@@ -111,7 +111,7 @@ h1 {
 @media screen and (min-width: 1200px) {
   .text_about {
     h1 {
-      font-size: 6rem;
+      font-size: 8rem;
     }
     p {
       font-size: 1rem;

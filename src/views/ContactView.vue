@@ -154,4 +154,76 @@ input:focus,
 textarea:focus {
   outline: none;
 }
+
+@media only screen and (max-width: 1000px) {
+  .form_cont {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form_cont {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form_cont {
+    width: 80%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .form_cont {
+    width: 80%;
+  }
+
+  .inner {
+    height: 40px;
+    border-radius: 30px;
+  }
+
+  .outer {
+    height: 50px;
+    border-radius: 40px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .cont_papa {
+    padding-bottom: 20rem;
+  }
+
+  .textarea_inner,
+  .textarea_outer {
+    height: max-content;
+    padding: 1rem 0rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+input,
+textarea {
+  font-size: 1.2rem;
+}
+
+button {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 </style>
