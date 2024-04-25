@@ -172,7 +172,7 @@ textarea:focus {
     width: 80%;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
@@ -192,7 +192,7 @@ textarea:focus {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .cont_papa {
@@ -207,9 +207,6 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 480px) {
-  h1 {
-    font-size: 2.2rem;
-  }
 }
 
 input,
@@ -223,7 +220,7 @@ button {
 
 @media only screen and (max-width: 360px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 </style>
