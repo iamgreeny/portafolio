@@ -112,31 +112,14 @@ import TheFooter from "@/components/layouts/TheFooter.vue";
 
   #meteor {
     width: 208px;
-    height: 100px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  /* Ajustes para pantallas de tamaño medio (tabletas, por ejemplo) */
-  #meteor {
-    width: 300px;
     height: auto;
   }
-}
 
-@media screen and (max-width: 1024px) {
-  /* Ajustes para pantallas más grandes, como laptops */
-  #meteor {
-    width: 400px;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  /* Ajustes para pantallas aún más grandes, como escritorios */
-  #meteor {
-    width: 600px;
-    height: auto;
+  .intro-animation {
+    width: 100dvw;
+    width: 100vw;
+    height: 100dvh;
+    height: 100vh;
   }
 }
 </style>
